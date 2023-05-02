@@ -14,7 +14,7 @@ setup(
     long_description='',
     license='Apache License 2.0',
     keywords='ansible',
-    url='http://github.com/ansible/awx-custom-credential-plugin-example',
+    url='http://github.com/tuxonfire/awx-custom-credential-plugin-example',
     packages=['awx_custom_credential_plugin_example'],
     include_package_data=True,
     zip_safe=False,
@@ -22,7 +22,7 @@ setup(
     install_requires=requirements,
     entry_points = {
         'awx.credential_plugins': [
-            'example_plugin = awx_custom_credential_plugin_example:example_plugin',
+            'dynamic_plugin = awx_custom_credential_plugin_example:dynamic_plugin',
         ]
     }
 )
